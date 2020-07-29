@@ -7,46 +7,76 @@
     <base target="_blank">
 </head>
 <body>
+  
     <!--Первый экран:начало-->
     <div>
-        <header><!--Шапка-->
+        <headrer>
+        <!--Шапка-->
             <div>
                 <a title="Университет &laquo;Иннополис&raquo;" href="https://innopolis.university/"><div style="float: left; margin-right: 20px; background-color: black;">
                     <img src="image/logo.png" alt="Логотип/">
                 </div>
             </a>
-                
-                
                 <!--Меню-->
                <div style="float: left;margin-right: 20px;">
                     <span style="color:brown;">
                         <nav>
-                           <a href="paytikets.html">ЗАКАЗАТЬ БИЛЕТ</a>
-                            <a href="advantages.html">ПРЕИМУЩЕСТВА</a>
-                            <a href="films.html">ФИЛЬМЫ</a>
-                           <a href="contacts.html">КОНТАКТЫ</a> 
+                            <ul>
+                           <li><a href="paytikets.html">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                           <li><a href="advantages.html">ПРЕИМУЩЕСТВА</a></li> 
+                            <li><a href="films.html">ФИЛЬМЫ</a></li>
+                            <li><a href="contacts.html">КОНТАКТЫ</a></li> 
+                            </ul>
                         </nav>
                         
+                          <!--Здесь будет форма-->
+                            <form action="order.php">
+                                <input required type="text" placeholder="Имя">
+                                <input required type="email" placeholder="Почта">
+                                <select required name="" id="">
+                                    <option value disabled selected="">Выбор места</option>
+                                    <option value=""> 1</option>
+                                    <option value=""> 2</option>
+                                    <option value=""> 3</option>
+                                    <option value=""> 4</option>
+                                    <option value=""> 5</option>
+                                    <option value=""> 6</option>
+                                    <option value=""> 7</option>
+                                    <option value=""> 8</option>
+                                    <option value=""> 9</option>
+                                    <option value=""> 10</option>
+                                </select>
+                                <textarea placeholder="Напиши комментарий" id="" cols="30" rows="10"></textarea>
+                                <input type="file">
+                                <p><b>Согласие на обаботку персональных данных</b></p>
+                                <input required type="checkbox">
+                                <input type="submit">
+                            </form> 
+                           <br/>
+                           <br/>
+                           <br/>
+                           <br/>
+
                     </span>
                    </div> 
                 </header>
         
 
        <!--Выбор города-->
-       <div>Ваш город: <strong><a href="">Москва</a></strong> </div>
+       <div><aside>Ваш город: <strong><a href="">Москва</a></strong></aside></div>
     </div> 
 
 <!--Второй блок-->
     <div>
-       <!--Заголовок-->  <h1>Закажите билет в <span style="color: darkgreen;">кино</span> </h1>
-       <!--Параграф--> <p>Всем покупателям подарок!</p>
+       <!--Заголовок--> <h1>Закажите билет в <span style="color: darkgreen;">кино</span> </h1>
+       <!--Параграф-->  <p> Всем покупателям подарок!</p>
     </div>
     </div> 
     <!--Первый экран:конец-->
         
     <!--Второй экран:начало-->
     <div>
-        <div>Почему мы?</div>
+        <div><h2>Почему мы?</h2></div>
         <div>
             <section>
                 <h2>Добро пожаловать!</h2> 
@@ -59,7 +89,7 @@
         <div>
             <section>
                 <div> <img src="image/b2_icon_1.jpg" alt="Пленка/"></div>
-       <b>Большие экраны <sup>*</sup> </b> 
+       <h3><b>Большие экраны <sup>*</sup></b></h3> 
       <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i> </p>       
             </section>
         </div>
@@ -68,7 +98,7 @@
    <div>
     <section>
         <div><img src="image/b2_icon_2.jpg" alt="Рупор/"></div>
-       <b>Объемный звук <sup>*</sup></b> 
+       <h3><b>Объемный звук <sup>*</sup></b> </h3>
       <p><i>Lorem ipsum dolor sit amet.</i></p> 
     </section>
    </div>
@@ -76,7 +106,7 @@
    <div>
        <section>
         <div> <img src="image/b2_icon_3.jpg" alt="Сидение/"></div>
-        <b>Удобные кресла <sub>-</sub></b> 
+        <h3><b>Удобные кресла <sub>-</sub></b></h3> 
         <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i></p>    
        </section>
     </div>
@@ -126,8 +156,16 @@
     <!--Обзор фильмов-->
     <div>
          <section>
-            <h3> Фильмы</h3>
-
+            <h2> Фильмы</h2>
+            <h3> <b><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук</a></b></h3>
+            <img src="image\Spiderman-3-theories-Venom-spiderman-3-Reddit-leak-spider-man-1137677.jpg" width="400" height="400" alt="ЧП2/">
+            <h3> <b><a title="Cобачья жинь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></b></h3> 
+            <img src="image\37834087-1084306.jpg" width="400" height="400" alt="СБ2/">
+            <h3><b><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/"> История игрушек 4</a></b></h3>
+            <img src="image\693730.jpg" width="400" height="400" alt="ИГ4/">
+            <h3><b><a title="Обзор на кинопоиске" href="https://www.kinopoisk.ru/film/693730/"> Люди в черном: Интернэшнл</a></b></h3>
+            <img src="image\693730.jpg" width="400" height="400" alt="ЛЧ4/">
+            <br/>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
          </section>
     </div>
@@ -135,7 +173,7 @@
     <!--Пятый экран: конец-->
 
     <!--Шестой экран: конец-->
-    <!--Здесь будет карта и занчки соц. сетей и подвал сайта-->
+    <!--Здесь будет карта и значки соц. сетей и подвал сайта-->
     
     <br/>
     <br/>
