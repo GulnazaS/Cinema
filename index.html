@@ -6,19 +6,77 @@
     <title>Кинотеатр</title>
     <base target="_blank">
 </head>
+<style>
+    th, td
+    {
+        border: 1px solid black;
+        padding: 5px 10px;
+    }
+</style>
 <body>
-  
+    <!--Форма-->
+    <form method="POST" action="order.php">
+        <div>
+         <label for=""><b> Имя </b><input required type="text"></label>
+        </div>
+        <div>
+         <label for=""><b> Почта </b><input required type="email"></label> 
+        </div>
+     
+        <div>
+         <label for=""><b> Выбор места</b>
+             <select required name="">
+                 <option value disabled selected="">Место №</option>
+                 <option value=""> 1</option>
+                 <option value=""> 2</option>
+                 <option value=""> 3</option>
+                 <option value=""> 4</option>
+                 <option value=""> 5</option>
+                 <option value=""> 6</option>
+                 <option value=""> 7</option>
+                 <option value=""> 8</option>
+                 <option value=""> 9</option>
+                 <option value=""> 10</option>
+             </select>
+         </label>  
+        </div>
+        <div>
+         <label for=""> 
+             <textarea placeholder="Напиши комментарий" cols="30" rows="10" name="description"></textarea>
+         </label>
+        </div>
+        <div>
+         <label><b> Прикрепи файл </b><input type="file"> </label>
+        </div>
+        <div>
+         <label>
+            <b>Согласие на обработку персональных данных</b>
+             <input required type ="checkbox">
+         </label>
+        </div>
+        <div>
+            <label for="">
+         <button>Заказать</button></>
+         </label>
+        </div>
+     </form> 
+     <br/>
+     <br/>
+     <br/>
+     <br/>
     <!--Первый экран:начало-->
     <div>
         <headrer>
         <!--Шапка-->
             <div>
-                <a title="Университет &laquo;Иннополис&raquo;" href="https://innopolis.university/"><div style="float: left; margin-right: 20px; background-color: black;">
+                <a title="Университет &laquo;Иннополис&raquo;" href="https://innopolis.university/">
+                    <div style="float: left; margin-right: 20px; background-color: black;">
                     <img src="image/logo.png" alt="Логотип/">
-                </div>
+                </div> 
+                
             </a>
                 <!--Меню-->
-               <div style="float: left;margin-right: 20px;">
+               <div id="Меню"; style="float: left;margin-right: 20px; ">
                     <span style="color:brown;">
                         <nav>
                             <ul>
@@ -29,29 +87,7 @@
                             </ul>
                         </nav>
                         
-                          <!--Здесь будет форма-->
-                            <form action="order.php">
-                                <input required type="text" placeholder="Имя">
-                                <input required type="email" placeholder="Почта">
-                                <select required name="" id="">
-                                    <option value disabled selected="">Выбор места</option>
-                                    <option value=""> 1</option>
-                                    <option value=""> 2</option>
-                                    <option value=""> 3</option>
-                                    <option value=""> 4</option>
-                                    <option value=""> 5</option>
-                                    <option value=""> 6</option>
-                                    <option value=""> 7</option>
-                                    <option value=""> 8</option>
-                                    <option value=""> 9</option>
-                                    <option value=""> 10</option>
-                                </select>
-                                <textarea placeholder="Напиши комментарий" id="" cols="30" rows="10"></textarea>
-                                <input type="file">
-                                <p><b>Согласие на обаботку персональных данных</b></p>
-                                <input required type="checkbox">
-                                <input type="submit">
-                            </form> 
+                          
                            <br/>
                            <br/>
                            <br/>
@@ -60,15 +96,14 @@
                     </span>
                    </div> 
                 </header>
-        
 
        <!--Выбор города-->
        <div><aside>Ваш город: <strong><a href="">Москва</a></strong></aside></div>
     </div> 
 
 <!--Второй блок-->
-    <div>
-       <!--Заголовок--> <h1>Закажите билет в <span style="color: darkgreen;">кино</span> </h1>
+    <div id="Закажи билет">
+       <!--Заголовок--> <h1>Закажите билет в <span style="color: darkgreen;">кино</span></h1>
        <!--Параграф-->  <p> Всем покупателям подарок!</p>
     </div>
     </div> 
@@ -86,7 +121,7 @@
         </div>
       
         <!--Блок с преимуществами-->
-        <div>
+        <div id="Почему мы?">
             <section>
                 <div> <img src="image/b2_icon_1.jpg" alt="Пленка/"></div>
        <h3><b>Большие экраны <sup>*</sup></b></h3> 
@@ -98,7 +133,7 @@
    <div>
     <section>
         <div><img src="image/b2_icon_2.jpg" alt="Рупор/"></div>
-       <h3><b>Объемный звук <sup>*</sup></b> </h3>
+       <h3><b>Объемный звук <sup>*</sup></b></h3>
       <p><i>Lorem ipsum dolor sit amet.</i></p> 
     </section>
    </div>
@@ -117,17 +152,41 @@
     </div>
 
     <!--Третий экран:начало-->
-    <!--Расписание фильмов-->
-    <div>
+    <!--Расписание фильмов: должна быть таблица-->
+    <div id="Расписание фильмов">
         <section>
             <h2><b>Выберите фильм</b></h2>
-
-  Начало сеанса	Название фильма 	Жанр
-<br/> 10:00 <a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук</a> фантастика, боевик, приключения
-<br/> 12:00	<a title="Cобачья жинь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a> фэнтези, драма, комедия
-<br/> 14:00 <a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/"> История игрушек 4</a> мультфильм, фэнтези, комедия
-<br/> 16:00	<a title="Обзор на кинопоиске" href="https://www.kinopoisk.ru/film/693730/"> Люди в черном: Интернэшнл</a> фантастика, боевик, комедия
-<br/>
+            <table>
+                <tr>
+                  <td>Check</td>  <td><b> Начало сеанса</b>
+                </td> <td><b> Название фильма</b>
+                </td> <td><b>Жанр</b></td>
+                </tr>
+                <tr>
+                    <td>Check</td> 
+                    <td>10:00</td>
+                    <td><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук</a></td>
+                    <td>фантастика, боевик, приключения</td>
+                </tr>
+                <tr>
+                    <td>Check</td>
+                    <td>12:00</td>
+                    <td><a title="Cобачья жинь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></td>
+                    <td>фэнтези, драма, комедия</td>
+                </tr>
+                <tr>
+                    <td>Check</td>
+                    <td>14:00</td>
+                    <td><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/"> История игрушек 4</a></td>
+                    <td>мультфильм, фэнтези, комедия</td>
+                </tr>
+                <tr>
+                    <td>Check</td>
+                    <td>16:00</td>
+                    <td><a title="Обзор на кинопоиске" href="https://www.kinopoisk.ru/film/693730/"> Люди в черном: Интернэшнл</a></td>
+                    <td>фантастика, боевик, комедия</td>
+                </tr>
+            </table>
 <br/> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
         </section>
         
@@ -135,9 +194,9 @@
     <!--Третий экран:конец-->
        
    <!--Четвертый экран:начало-->
-   <div>
+   <div id="Подарок каждому">
        <section>
-        <div> <h2><b>Подарок каждому!</b><sup>*</sup></h2> </div>  
+        <div><h2><b>Подарок каждому!</b><sup>*</sup></h2></div>  
         <img src="image/b4_img.jpg" alt="Подарок/">
            
         <p><i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</i></p> 
@@ -154,17 +213,37 @@
     <!--Пятый экран: начало-->
 
     <!--Обзор фильмов-->
-    <div>
+    <div id="Обзор фильмов">
          <section>
-            <h2> Фильмы</h2>
-            <h3> <b><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук</a></b></h3>
-            <img src="image\Spiderman-3-theories-Venom-spiderman-3-Reddit-leak-spider-man-1137677.jpg" width="400" height="400" alt="ЧП2/">
-            <h3> <b><a title="Cобачья жинь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></b></h3> 
-            <img src="image\37834087-1084306.jpg" width="400" height="400" alt="СБ2/">
-            <h3><b><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/"> История игрушек 4</a></b></h3>
-            <img src="image\693730.jpg" width="400" height="400" alt="ИГ4/">
-            <h3><b><a title="Обзор на кинопоиске" href="https://www.kinopoisk.ru/film/693730/"> Люди в черном: Интернэшнл</a></b></h3>
+             <h2>Фильмы</h2>
+             <div>
+                <h3><b><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук</a></b></h3>
+                <img src="image\Spiderman-3-theories-Venom-spiderman-3-Reddit-leak-spider-man-1137677.jpg" width="400" height="400" alt="ЧП2/">
+                <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
+                <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+             </div>
+
+             <div>
+                <h3> <b><a title="Cобачья жинь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></b></h3> 
+                <img src="image\37834087-1084306.jpg" width="400" height="400" alt="СБ2/">
+                <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
+                <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+             </div>
+
+            <div>
+                <h3><b><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></b></h3>
+                <img src="image\693730.jpg" width="400" height="400" alt="ИГ4/">
+                <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
+                <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+            </div>
+
+            <div>
+                <h3><b><a title="Обзор на кинопоиске" href="https://www.kinopoisk.ru/film/693730/">Люди в черном: Интернэшнл</a></b></h3>
             <img src="image\693730.jpg" width="400" height="400" alt="ЛЧ4/">
+            <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
+            <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+            </div>
+            
             <br/>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
          </section>
@@ -179,9 +258,22 @@
     <br/>
     <br/>
     <div>
+        <a title="Twitter" href="https://twitter.com">Twitter</a>
+        <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+        <a title="Tumblr" href="https://www.tumblr.com/">Tumblr</a>
+        <a title="Google+" href="https://google.com/">Google+</a> <br/>
+
+        <!--Шестой  экран: конец-->
+    <a href="#Меню"; target="_self">Меню</a>
+    <a href="#Закажи билет" target="_self">Закажи билет</a>
+    <a href="#Почему мы?" target="_self">Почему мы?</a>
+    <a href="#Расписание фильмов" target="_self">Расписание фильмов</a>
+    <a href="#Подарок каждому" target="_self">Подарок каждому</a>
+    <a href="#Обзор фильмов" target="_self">Фильмы</a>
+
        <footer><img src="image\1920x450.png" width="300" height="150" alt="Карта"></footer> 
     </div>
-    <!--Шестой  экран: конец-->
+    
     
 </body>
 </html>
