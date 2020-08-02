@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Кинотеатр</title>
-    <!--Подлкючение файла .css для подключения стилей-->
+    <!--Подключение файла .css для подключения стилей-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/icons.css">
@@ -15,197 +15,192 @@
 </head>
 <body>
     <!--Форма-->
-    <form method="POST" action="order.php">
-        <div>
-         <label for=""><b> Имя </b><input required type="text"></label>
-        </div>
-        <div>
-         <label for=""><b> Почта </b><input required type="email"></label> 
-        </div>
-     
-        <div>
-         <label for=""><b> Выбор места</b>
-             <select required name="">
-                 <option value disabled selected="">Место №</option>
-                 <option value=""> 1</option>
-                 <option value=""> 2</option>
-                 <option value=""> 3</option>
-                 <option value=""> 4</option>
-                 <option value=""> 5</option>
-                 <option value=""> 6</option>
-                 <option value=""> 7</option>
-                 <option value=""> 8</option>
-                 <option value=""> 9</option>
-                 <option value=""> 10</option>
-             </select>
-         </label>  
-        </div>
-        <div>
-         <label for=""> 
-             <textarea placeholder="Напиши комментарий" cols="30" rows="10" name="description"></textarea>
-         </label>
-        </div>
-        <div>
-         <label><b> Прикрепи файл </b><input type="file"> </label>
-        </div>
-        <div>
-         <label>
-            <b>Согласие на обработку персональных данных</b>
-             <input required type ="checkbox">
-         </label>
-        </div>
-        <div>
-            <label for="">
-         <button>Заказать</button></>
-         </label>
-        </div>
-     </form> 
+        <form method="POST" action="order.php">
+                <div>
+                <label for=""><b> Имя </b><input required type="text"></label>
+                </div>
+
+                <div>
+                    <label for=""><b> Почта </b><input required type="email"></label> 
+                </div>
+            
+                <div>
+                <label for=""><b> Выбор места</b>
+                    <select required name="">
+                        <option value disabled selected="">Место №</option>
+                        <option value=""> 1</option>
+                        <option value=""> 2</option>
+                        <option value=""> 3</option>
+                        <option value=""> 4</option>
+                        <option value=""> 5</option>
+                        <option value=""> 6</option>
+                        <option value=""> 7</option>
+                        <option value=""> 8</option>
+                        <option value=""> 9</option>
+                        <option value=""> 10</option>
+                    </select>
+                </label>  
+                </div>
+
+                <div>
+                <label for=""> 
+                    <textarea placeholder="Напиши комментарий" cols="30" rows="10" name="description"></textarea>
+                </label>
+                </div>
+                <div>
+                    <label><b> Прикрепи файл </b><input type="file"> </label>
+                </div>
+                <div>
+                    <label>
+                    <b>Согласие на обработку персональных данных</b>
+                        <input required type ="checkbox">
+                    </label>
+                </div>
+                <div>
+                    <label for="">
+                    <button>Заказать</button></>
+                    </label>
+                </div>
+        </form> 
      <br/>
      <br/>
      <br/>
      <br/>
     <!--Первый экран:начало-->
-    <div>
-        <headrer>
-        <!--Шапка-->
-            <div class="logo">
-                <a title="Университет &laquo;Иннополис&raquo;" href="https://innopolis.university/">
-                    <div style="float: left; margin-right: 20px; background-color: black;">
-                    <img src="image/logo.png" alt="Логотип/">
+        <div>
+            <header>
+                <!--Шапка-->
+                <div class="logo">
+                    <a title="Университет &laquo;Иннополис&raquo;" href="https://innopolis.university/">
+                        <div style="float: left; margin-right: 20px; background-color: black;">
+                            <img src="image/logo.png" alt="Логотип/">
+                        </div>  
+                    </a>
                 </div> 
-                
-            </a>
-                <!--Меню-->
-               <div class="menu">
-                    <span>
-                        <nav>
-                            <ul>
-                           <li><a href="paytikets.html">ЗАКАЗАТЬ БИЛЕТ</a></li>
-                           <li><a href="advantages.html">ПРЕИМУЩЕСТВА</a></li> 
-                            <li><a href="films.html">ФИЛЬМЫ</a></li>
-                            <li><a href="contacts.html">КОНТАКТЫ</a></li> 
-                            </ul>
-                        </nav>
-                           <br/>
-                           <br/>
-                           <br/>
-                           <br/>
-                    </span>
-                   </div> 
-                </header>
+                    <!--Меню-->
+                <div class="menu" id="меню">
+                        <span>
+                            <nav>
+                                <ul>
+                                <li><a href="paytikets.html">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                                <li><a href="advantages.html">ПРЕИМУЩЕСТВА</a></li> 
+                                <li><a href="films.html">ФИЛЬМЫ</a></li>
+                                <li><a href="contacts.html">КОНТАКТЫ</a></li> 
+                                </ul>
+                            </nav>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                        </span>
+                </div> 
+                <!--Выбор города-->
+                <div class="city"><aside>Ваш город: <strong><a href="">Москва</a></strong></aside></div>
+            </header>
 
-       <!--Выбор города-->
-       <div class="city"><aside>Ваш город: <strong><a href="">Москва</a></strong></aside></div>
-            </div> 
-
-<!--Второй блок-->
-    <div class="Pay__tickets">
-       <!--Заголовок--> <h1>Закажите билет в <span style="color: darkgreen;">кино</span></h1>
-       <!--Параграф-->  <p> Всем покупателям подарок!</p>
-    </div>
-    </div> 
+        <!--Второй блок-->
+            <div class="Pay__tickets" id="закажи билет">
+                <!--Заголовок--> <h1>Закажите билет в <span style="color: darkgreen;">кино</span></h1>
+                <!--Параграф-->  <p> Всем покупателям подарок!</p>
+            </div>
+        </div> 
     <!--Первый экран:конец-->
         
     <!--Второй экран:начало-->
-        <div><h2>Почему мы?</h2></div>
-            <section>
-                <div class="welcome">
-                <h2>Добро пожаловать!</h2> 
-                <p> <q> Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</q></p>       
-                <p> <blockquote>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</blockquote> </p> 
-                </div>
-            </section>
-      
-        <!--Блок с преимуществами-->
-            <section>
-            <div class="why__we">
+            <div><h2>Почему мы?</h2></div>
                 <section>
-                    <div class="big__screen">
-                        <div> <img src="image/b2_icon_1.jpg" alt="Пленка/"></div>
-                <h3><b>Большие экраны <sup>*</sup></b></h3> 
-               <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i> </p>
+                    <div class="welcome">
+                        <h2>Добро пожаловать!</h2> 
+                        <p> <q> Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</q></p>       
+                        <p> <blockquote>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</blockquote> </p> 
                     </div>
                 </section>
-                            
-             <section>
-                <div class="surround__sound">
-                 <div><img src="image/b2_icon_2.jpg" alt="Рупор/"></div>
-                <h3><b>Объемный звук <sup>*</sup></b></h3>
-               <p><i>Lorem ipsum dolor sit amet.</i></p> 
-              </div>
-             </section>
-            
-             <section>
-                <div class="comfortable__chairs">
-                 <div> <img src="image/b2_icon_3.jpg" alt="Сидение/"></div>
-                 <h3><b>Удобные кресла <sub>-</sub></b></h3> 
-                 <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i></p>
-                 </div>
-             </section>
-          </section>
-         </div>
-         
+      
+        <!--Блок с преимуществами-->
+                <section>
+                    <div class="why__we" id="почему мы">
+                        <section>
+                            <div class="big__screen">
+                                <div> <img src="image/b2_icon_1.jpg" alt="Пленка/"></div>
+                                <h3><b>Большие экраны <sup>*</sup></b></h3> 
+                                <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i> </p>
+                            </div>
+                        </section>
+                              
+                        <section>
+                            <div class="surround__sound">
+                                <div><img src="image/b2_icon_2.jpg" alt="Рупор/"></div>
+                                <h3><b>Объемный звук <sup>*</sup></b></h3>
+                                <p><i>Lorem ipsum dolor sit amet.</i></p> 
+                            </div>
+                        </section>
+                    
+                        <section>
+                            <div class="comfortable__chairs">
+                                <div> <img src="image/b2_icon_3.jpg" alt="Сидение/"></div>
+                                <h3><b>Удобные кресла <sub>-</sub></b></h3> 
+                                <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i></p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
              <!--Третий экран:начало-->
              <!--Расписание фильмов: таблица-->
                  <section>
-                     <div class="container">
+                     <div class="container" id="расписание фильмов">
                          <div class="movie-list">
-                             <h2 class="movie-list__header">Выберите фильм</h2>
-                             <table class="movie-list__table">
-                                 <thead>
-                                     <td><b>Time</b></td>
-                                      <td><b>Stuff that will happen</b></td>
-                                      <td><b>ЗАКАЗАТЬ БИЛЕТ</b></td>
-                                 </thead>
-                                         <tbody>
-                                             <tr>
-                                                 <td>10am - 12pm</td>
-                                                 <td>Introduction and presentations about Envato</td>
-                                                 <td>кнопка</td> 
-                                             </tr>
-                 
-                                             <tr>
-                                                 <td>12pm - 02pm</td>
-                                                 <td>Sessions by honorable guests and Speakers</td>
-                                                 <td>кнопка</td>
-                                             </tr>
-                 
-                                             <tr>
-                                                 <td>02pm - 03pm</td>
-                                                 <td>Break and Mingle time with the authors</td>
-                                                 <td>кнопка</td>
-                                             </tr>
-                                         </tbody>
-                 
-                                          <tfoot>
-                                                 <td>03pm - 05pm</td>
-                                                 <td>Portfolio Review, Rewards and Ending Presentation</td>
-                                                 <td>кнопка</td>
-                                          </tfoot>
-                              </table>
-                         </div>
-                     </div>
-                 </section>
-                 <div>
-                     <br/> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
-            </div>         
+                             <caption>
+                                <h2 class="movie-list__header">Выберите фильм</h2>
+                            </caption>
+                            <table class="movie-list__table">
+                                <thead>
+                                    <td><b>Начало сеанса</b></td>
+                                    <td><b>Название фильма</b></td>
+                                    <td><b>ЗАКАЗАТЬ БИЛЕТ</b></td>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10:00</td>
+                                        <td>Человек-паук</td>
+                                        <td>кнопка</td> 
+                                    </tr>
+        
+                                    <tr>
+                                        <td>12:00</td>
+                                        <td>Собачья жизнь 2</td>
+                                        <td>кнопка</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>14:00</td>
+                                        <td>История игрушек 4</td>
+                                        <td>кнопка</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16:00</td>
+                                        <td>Люди в черном: Интернэшнл</td>
+                                        <td>кнопка</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                 </section>        
         
    
     <!--Третий экран:конец-->
        
    <!--Четвертый экран:начало-->
        <section>
-        <div class="present__to__each">
-        <h2><b>Подарок каждому!</b><sup>*</sup></h2> 
-        <img src="image/b4_img.jpg" alt="Подарок/">
-           
-        <p><i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</i></p> 
-        
-       <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</i></p>  
-        
-        <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam</i></p> 
-    </div>
-    </section> 
+            <div class="present__to__each" id="подарок каждому">
+                <h2><b>Подарок каждому!</b><sup>*</sup></h2> 
+                <img src="image/b4_img.jpg" alt="Подарок/">
+                <p><i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</i></p> 
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</i></p>  
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam</i></p> 
+            </div>
+        </section> 
     
   <!--Четвертый экран:конец-->
     
@@ -213,66 +208,62 @@
 
     <!--Обзор фильмов-->
          <section>
-            <div class="about__filmes">
-             <h2>Фильмы</h2>
-             <div class="spiderman">
-                <h3><b><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук</a></b></h3>
-                <img src="image\Spiderman-3-theories-Venom-spiderman-3-Reddit-leak-spider-man-1137677.jpg" width="400" height="400" alt="ЧП2/">
-                <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
-                <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
-             </div>
+            <div class="about__filmes" id="about__filmes">
+                <h2>Фильмы</h2>
+                <div class="spiderman"> 
+                    <h3><b><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук</a></b></h3>
+                    <img src="image\Spiderman-3-theories-Venom-spiderman-3-Reddit-leak-spider-man-1137677.jpg" width="400" height="400" alt="ЧП2/">
+                    <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
+                    <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+                </div>
 
-             <div class="dogs_life">
-                <h3> <b><a title="Cобачья жинь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></b></h3> 
-                <img src="image\37834087-1084306.jpg" width="400" height="400" alt="СБ2/">
-                <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
-                <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
-             </div>
+                <div class="dogs_life">
+                    <h3> <b><a title="Cобачья жинь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></b></h3> 
+                    <img src="image\37834087-1084306.jpg" width="400" height="400" alt="СБ2/">
+                    <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
+                    <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+                </div>
 
-            <div class="toys_story">
-                <h3><b><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></b></h3>
-                <img src="image\693730.jpg" width="400" height="400" alt="ИГ4/">
-                <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
-                <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
-            </div>
+                <div class="toys_story">
+                    <h3><b><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></b></h3>
+                    <img src="image\693730.jpg" width="400" height="400" alt="ИГ4/">
+                    <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
+                    <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+                </div>
 
-            <div class="men_in_black">
-                <h3><b><a title="Обзор на кинопоиске" href="https://www.kinopoisk.ru/film/693730/">Люди в черном: Интернэшнл</a></b></h3>
-            <img src="image\693730.jpg" width="400" height="400" alt="ЛЧ4/">
-            <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
-            <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
-            </div>
+                <div class="men_in_black">
+                    <h3><b><a title="Обзор на кинопоиске" href="https://www.kinopoisk.ru/film/693730/">Люди в черном: Интернэшнл</a></b></h3>
+                    <img src="image\693730.jpg" width="400" height="400" alt="ЛЧ4/">
+                    <a title="Instagram" href="https://www.instagram.com/?hl=ru">Instagram</a>
+                    <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+                </div>
             
-            <br/>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
-        </div>
+                <br/>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
+            </div>
         </section>
 
     <!--Пятый экран: конец-->
 
     <!--Шестой экран: конец-->
-    <!--Здесь будет карта и значки соц. сетей и подвал сайта-->
     
     <br/>
     <br/>
     <br/>
-    <div>
-        <a title="Twitter" href="https://twitter.com">Twitter</a>
-        <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
-        <a title="Tumblr" href="https://www.tumblr.com/">Tumblr</a>
-        <a title="Google+" href="https://google.com/">Google+</a> <br/>
+        <div>
+            <a title="Twitter" href="https://twitter.com">Twitter</a>
+            <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
+            <a title="Tumblr" href="https://www.tumblr.com/">Tumblr</a>
+            <a title="Google+" href="https://google.com/">Google+</a> <br/>
 
         <!--Шестой  экран: конец-->
-    <a href="#menu"; target="_self">Меню</a>
-    <a href="#Pay__tickets" target="_self">Закажи билет</a>
-    <a href="#Why__we" target="_self">Почему мы?</a>
-    <a href="#container" target="_self">Расписание фильмов</a>
-    <a href="#present__to__each" target="_self">Подарок каждому</a>
-    <a href="#about__filmes" target="_self">Фильмы</a>
-
-       <footer><img src="image\1920x450.png" width="300" height="150" alt="Карта"></footer> 
-    </div>
-    
-    
-</body>
+            <a href="#меню"; target="_self">Меню</a>
+            <a href="#закажи билет" target="_self">Закажи билет</a>
+            <a href="#почему мы" target="_self">Почему мы?</a>
+            <a href="#расписание фильмов" target="_self">Расписание фильмов</a>
+            <a href="#подарок каждомуы" target="_self">Подарок каждому</a>
+            <a href="#about__filmes" target="_self">Фильмы</a>
+        </div>   
+    </body>
+    <footer><img src="image\1920x450.png" width="300" height="150" alt="Карта"></footer> 
 </html>
