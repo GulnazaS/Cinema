@@ -17,6 +17,7 @@ body {
     max-width: 1030px;
     margin: auto;
 }
+/*Таблица*/
 .movie-list__header{
     color:#252525;
     font-size: 40px;
@@ -60,17 +61,21 @@ body {
 .movie-list__table a {
     color: white;
 }
+
+/* Стрелки*/
 .arrow-up{
     width: 0; 
     height: 0; 
     border-left: 10px solid transparent;
     border-right: 12px solid transparent;
     border-bottom: 19px solid white;
+    transform: translate(180px, -23px);
 }
 .arrow-down {
     width: 0; 
     height: 0; 
-    border-left: 13px solid transparent;
-    border-right: 12px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
     border-top: 19px solid white;
+    transform: translate(289px, -21px);
 }
