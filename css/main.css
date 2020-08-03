@@ -57,7 +57,20 @@ body {
     vertical-align: super;
     background: #373737;
 } 
-.arrow-top{
+.movie-list__table a {
+    color: white;
 }
-
-
+.arrow-up{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 19px solid white;
+}
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 13px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 19px solid white;
+}
