@@ -79,3 +79,6 @@ body {
     border-top: 19px solid white;
     transform: translate(289px, -21px);
 }
+.movie-list__table tfoot{
+    transform: translate(10px, -24px);
+}
