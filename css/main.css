@@ -49,7 +49,7 @@ body {
     background: #a3cc40;
     font-size: 22px;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 11px;
     vertical-align: super;
 }
 .movie-list__table tbody, tfoot{
@@ -66,10 +66,10 @@ body {
 .arrow-up{
     width: 0; 
     height: 0; 
-    border-left: 10px solid transparent;
+    border-left: 11px solid transparent;
     border-right: 12px solid transparent;
     border-bottom: 19px solid white;
-    transform: translate(180px, -23px);
+    transform: translate(183px, -12px);
 }
 .arrow-down {
     width: 0; 
@@ -77,7 +77,7 @@ body {
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
     border-top: 19px solid white;
-    transform: translate(289px, -21px);
+    transform: translate(294px, -12px);
 }
 .movie-list__table tfoot{
     transform: translate(10px, -24px);
