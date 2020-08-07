@@ -19,23 +19,23 @@ body {
 }
 /*Таблица*/
 .movie-list__header{
-    color:#252525;
+    color:#252525; 
     font-size: 40px;
     text-align: center;
     font-weight: 700;
-    margin: 110px;
-    margin-bottom: 63px;
+    margin: 110px; /*Величина отступа*/
+    margin-bottom: 63px; /* Величина отступа нижнего края*/
 }
 .movie-list__table{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-collapse: collapse;
+    border-collapse: collapse; /*Устанавливает, как отображать границы вокруг ячеек таблицы: 1 линия*/
     text-align: center;
-    border-radius: 15px;
-    overflow: hidden; 
-    vertical-align: super;
-    width: 80%;
+    border-radius: 15px; /*радиус скругления уголков рамки*/
+    overflow: hidden; /*управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров*/
+    vertical-align: super; /*Выравнивает элемент по вертикали*/
+    width: 80%; /*Ширина блочных элементов*/
 }
 .movie-list__table tbody tr:nth-child(2n+1) {
     background: #6c6c6c;
@@ -49,7 +49,7 @@ body {
     background: #a3cc40;
     font-size: 22px;
     font-weight: 700;
-    line-height: 11px;
+    line-height: 11px; /*межстрочный интервал*/
     vertical-align: super;
 }
 .movie-list__table tbody, tfoot{
@@ -78,7 +78,4 @@ body {
     border-right: 11px solid transparent;
     border-top: 19px solid white;
     transform: translate(294px, -12px);
-}
-.movie-list__table tfoot{
-    transform: translate(10px, -24px);
 }
