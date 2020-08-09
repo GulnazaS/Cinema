@@ -36,7 +36,6 @@ body {
     border-collapse: collapse; /*Устанавливает, как отображать границы вокруг ячеек таблицы: 1 линия*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    text-align: center;
     overflow: hidden; /*управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров*/
     vertical-align: super; /*Выравнивает элемент по вертикали*/
     width: 80%; /*Ширина блочных элементов*/
@@ -44,11 +43,12 @@ body {
 
 .movie-list__table thead{
     color: white;
-    background: #a3cc40;
     font-size: 22px;
     font-weight: 700;
     line-height: 11px; /*межстрочный интервал*/
     vertical-align: super;
+    text-align: center;
+    background: #a3cc40;
 }
 .movie-list__table tbody {
     font-size: 22px;
@@ -70,11 +70,15 @@ body {
     background: #6c6c6c;
 }
 
-.movie-list__table tbody tr:last-child{
+.movie-list__table tbody tr:last-child td:first-child{
     border-bottom-left-radius: 15px;
+    overflow: hidden;
+}
+.movie-list__table tbody tr:last-child td:last-child{
     border-bottom-right-radius: 15px;
     overflow: hidden;
 }
+
 
 .movie-list__table tfoot{
     background: white;
