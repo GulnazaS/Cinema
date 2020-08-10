@@ -9,110 +9,63 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css\stylesheet.css">
 
     <!--Открытие ссылки в новой вкладке-->
     <base target="_blank">
 </head>
 <body>
-    <!--Форма-->
-        <form method="POST" action="order.php">
-                <div>
-                <label for=""><b> Имя </b><input required type="text"></label>
-                </div>
-
-                <div>
-                    <label for=""><b> Почта </b><input required type="email"></label> 
-                </div>
-            
-                <div>
-                <label for=""><b> Выбор места</b>
-                    <select required name="">
-                        <option value disabled selected="">Место №</option>
-                        <option value=""> 1</option>
-                        <option value=""> 2</option>
-                        <option value=""> 3</option>
-                        <option value=""> 4</option>
-                        <option value=""> 5</option>
-                        <option value=""> 6</option>
-                        <option value=""> 7</option>
-                        <option value=""> 8</option>
-                        <option value=""> 9</option>
-                        <option value=""> 10</option>
-                    </select>
-                </label>  
-                </div>
-
-                <div>
-                <label for=""> 
-                    <textarea placeholder="Напиши комментарий" cols="30" rows="10" name="description"></textarea>
-                </label>
-                </div>
-                <div>
-                    <label><b> Прикрепи файл </b><input type="file"> </label>
-                </div>
-                <div>
-                    <label>
-                    <b>Согласие на обработку персональных данных</b>
-                        <input required type ="checkbox">
-                    </label>
-                </div>
-                <div>
-                    <label for="">
-                        <button>Заказать</button>
-                    </label>
-                </div>
-        </form> 
-     
+    
     <!--Первый экран:начало-->
-        <div>
+    <div class="first_page">
+        <div class="container_of_first_page">
             <header>
-                <!--Шапка-->
-                <div class="logo">
+                <div class="image-logo">
                     <a title="Университет &laquo;Иннополис&raquo;" href="https://innopolis.university/">
-                        <div style="float: left; margin-right: 20px; background-color: black;">
+                        <div class="logo">
                             <img src="image/logo.png" alt="Логотип/">
                         </div>  
                     </a>
-                </div> 
-                    <!--Меню-->
-                <div class="menu" id="меню">
-                        <span>
-                            <nav>
-                                <ul>
-                                <li><a title="ЗАКАЗАТЬ БИЛЕТ" href="paytikets.html">ЗАКАЗАТЬ БИЛЕТ</a></li>
-                                <li><a title="ПРЕИМУЩЕСТВА" href="advantages.html">ПРЕИМУЩЕСТВА</a></li> 
-                                <li><a title="ФИЛЬМЫ" href="films.html">ФИЛЬМЫ</a></li>
-                                <li><a title="КОНТАКТЫ" href="contacts.html">КОНТАКТЫ</a></li> 
-                                </ul>
-                            </nav>
-                        </span>
-                </div> 
-                <!--Выбор города-->
-                <div class="city"><aside>Ваш город: <strong><a href="">Москва</a></strong></aside></div>
+                </div>
+                    <!--Шапка-->
+                        <!--Меню-->
+                        <div class="menu" id="меню">
+                            <span>
+                                <nav class="block__nav text-right">
+                                    <ul>
+                                        <li><a title="ЗАКАЗАТЬ БИЛЕТ" href="paytikets.html">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                                        <li><a title="ПРЕИМУЩЕСТВА" href="advantages.html">ПРЕИМУЩЕСТВА</a></li> 
+                                        <li><a title="ФИЛЬМЫ" href="films.html">ФИЛЬМЫ</a></li>
+                                        <li><a title="КОНТАКТЫ" href="contacts.html">КОНТАКТЫ</a></li> 
+                                    </ul>
+                                </nav>
+                            </span>
+                        </div> 
+                    <!--Выбор города-->
+                    <div class="city"><aside>Ваш город: <strong><a href="">Москва</a></strong></aside></div>
             </header>
-
-        <!--Второй блок-->
+            <!--Второй блок-->
             <div class="Pay__tickets" id="закажи билет">
-                <!--Заголовок--> <h1>Закажите билет в кино</h1>
-                <!--Параграф-->  <p> Всем покупателям подарок!</p>
-                <img src="image\background.png" alt="фон">
+                    <!--Заголовок--> <h1>Закажите билет в кино</h1>
+                    <!--Параграф-->  <h2> Всем покупателям подарок!</h2>
             </div>
-        </div> 
+        </div>
+    </div> 
     <!--Первый экран:конец-->
-        
+    
     <!--Второй экран:начало-->
-            <div><h2>Почему мы?</h2></div>
-                <section>
-                    <div class="welcome">
+    <section>
+        <div class="welcome">
                         <h2>Добро пожаловать!</h2> 
-                        <p> <q> Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</q></p>       
-                        <p> <blockquote>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</blockquote> </p> 
-                    </div>
-                </section>
-      
-        <!--Блок с преимуществами-->
-                <section>
-                    <div class="why__we" id="почему мы">
+                        <p>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p> </br>      
+                        <p>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p> 
+        </div>
+    </section>
+    
+    <!--Блок с преимуществами-->
+    <section>
+        <div class="why__we" id="почему мы">
+            <div class="why"><h2>Почему мы?</h2></div>
                         <section>
                             <div class="big__screen">
                                 <div> <img src="image/b2_icon_1.jpg" alt="Пленка/"></div>
@@ -257,13 +210,62 @@
     <!--Пятый экран: конец-->
 
     <!--Шестой экран: Начало-->
+    <div class="last__page">
         <div class="social__networks">
             <a title="Twitter" href="https://twitter.com">Twitter</a>
             <a title="Facebook" href="https://ru-ru.facebook.com/">Facebook</a>
             <a title="Tumblr" href="https://www.tumblr.com/">Tumblr</a>
             <a title="Google+" href="https://google.com/">Google+</a> <br/>
         </div> 
+        <!--Форма-->
+        <form method="POST" action="order.php">
+            <div>
+            <label for=""><b> Имя </b><input required type="text"></label>
+            </div>
 
+            <div>
+                <label for=""><b> Почта </b><input required type="email"></label> 
+            </div>
+        
+            <div>
+            <label for=""><b> Выбор места</b>
+                <select required name="">
+                    <option value disabled selected="">Место №</option>
+                    <option value=""> 1</option>
+                    <option value=""> 2</option>
+                    <option value=""> 3</option>
+                    <option value=""> 4</option>
+                    <option value=""> 5</option>
+                    <option value=""> 6</option>
+                    <option value=""> 7</option>
+                    <option value=""> 8</option>
+                    <option value=""> 9</option>
+                    <option value=""> 10</option>
+                </select>
+            </label>  
+            </div>
+
+            <div>
+            <label for=""> 
+                <textarea placeholder="Напиши комментарий" cols="30" rows="10" name="description"></textarea>
+            </label>
+            </div>
+            <div>
+                <label><b> Прикрепи файл </b><input type="file"> </label>
+            </div>
+            <div>
+                <label>
+                <b>Согласие на обработку персональных данных</b>
+                    <input required type ="checkbox">
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    <button>Заказать</button>
+                </label>
+            </div>
+        </form> 
+    <!--Шестой экран: Конец-->
         <!--Якорь-->
         <div class="anhors">
             <a href="#меню" target="_self">Меню</a>
@@ -273,6 +275,7 @@
             <a href="#подарок каждомуы" target="_self">Подарок каждому</a>
             <a href="#about__filmes" target="_self">Фильмы</a>
         </div>
+    </div>
 
 </body>
 <footer><img src="image\map.png" alt="Карта"></footer> 

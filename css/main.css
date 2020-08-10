@@ -1,25 +1,120 @@
 /*Объявление класса container для задания его стилей*/
 body {
     font-family: 'Roboto', sans-serif;
-}
-/*Подключение шрифтов*/
-@font-face {
-    font:'Roboto';
-    src:url('fonts\Roboto-Regular.ttf') format("truetype");
-    font-weight: 400;
+    min-width: 320px;
+    max-width: 1920px;
+    -webkit-text-size-adjust: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@font-face {
-    font:'Roboto';
-    src:url('fonts\Roboto-Bold.ttf') format('truetype');
+/*Первый экран:начало*/
+/*Фон*/
+.first_page{
+    background: url(../image/background.png) no-repeat top center / cover;
+    min-height: 190vh;
+    margin: auto;
+}
+/*Логотип*/
+.image-logo{
+    display: inline-block;
+    padding-top: 45px;
+    margin-left: 192px;
+    margin-bottom: -16px;
+    box-sizing: border-box;
+}
+
+/*Меню*/
+.block__nav li{
+    display: inline-block;
+    text-align: right;
+    margin-left:681px;
+    margin-top: -36px;
+    box-sizing: border-box;
+}
+.block__nav li+li{
+    margin-left: 44px;
+}
+.block__nav a{
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.2s;
+}
+.block__nav a:hover{
+    color:#90d23d;
+}
+
+/*Выбор города*/
+.city{
+    color: white;
+    text-align: right;
+    margin-right: 86px;
+    margin-top: -16px;
+}
+.city a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.2s;
+}
+.city a:hover{
+    color:#90d23d;
+}
+
+/*Заголовок и подзаголовок*/
+.Pay__tickets{
+    text-align: center;
+    color: white;
+    font: 'Roboto-Thin' sans-serif;
+    margin-top: 200px;
+}
+.Pay__tickets h1{
+    font-size: 80px;
+    font-weight: 100;
+}
+.Pay__tickets h2{
+    font-size: 50px;
+}
+
+/*Первый экран:Конец*/
+
+/*Второй экран:Начало*/
+.welcome{
+    text-align: left;
+    width: 420px;
+    height: 233px;
+    padding-top: 40px;
+    padding: 34px;
+    padding-right: 115px;
+    margin-left: 753px;
+    margin-top: -187px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.welcome h2{
+    font-size: 44px;
     font-weight: 700;
+    line-height: 1.5;
+}
+.welcome p1, p2{
+    font-size: 14px;
+    margin-top: 36px;
+    line-height: 1.5;
 }
 
+/*Второй экран:Конец*/
+
+
+/*Третий экран:Начало*/
+/*Таблица*/
 .container{
     max-width: 1030px;
     margin: auto;
 }
-/*Таблица*/
 .movie-list__header{
     color:#252525; 
     font-size: 40px;
@@ -79,7 +174,6 @@ body {
     overflow: hidden;
 }
 
-
 .movie-list__table tfoot{
     background: white;
     color: black;
@@ -94,12 +188,10 @@ body {
     width: 0; 
     height: 0; 
 }
-
 .sort__arrow-up{
     border-bottom: 19px solid white;  
 }
-
 .sort__arrow-down {
     border-top: 19px solid white;
 }
-    
+/*Третий экран:Конец*/
