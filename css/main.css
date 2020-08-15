@@ -11,9 +11,20 @@ body {
 /*Первый экран:начало*/
 /*Фон*/
 .first_page{
-    background: url(../image/background.png) no-repeat top center / cover;
-    min-height: 190vh;
+    background: url(../image/bg.jpg) no-repeat top center / cover;
+    min-height: 770px;
     margin: auto;
+    position: relative;
+}
+.first_page .slice{
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 200px);
+    height: 220px;
+    z-index: 0;
+    transform: translate(0, 220px) rotate(-8deg);
+    transform-origin: 0 0;
 }
 /*Логотип*/
 .image-logo{
@@ -85,8 +96,8 @@ body {
 /*Второй экран:Начало*/
 .welcome{
     text-align: left;
-    width: 420px;
-    height: 233px;
+    width: 411px;
+    height: 239px;
     padding-top: 40px;
     padding: 34px;
     padding-right: 115px;
@@ -99,12 +110,34 @@ body {
     font-size: 44px;
     font-weight: 700;
     line-height: 1.5;
+    margin-bottom: 28px;
 }
-.welcome p1, p2{
+.welcome p{
     font-size: 14px;
-    margin-top: 36px;
+    margin-top: 6px;
     line-height: 1.5;
 }
+.why{
+    text-align: left;
+    font-size: 54px;
+    margin-top: -62px;
+    margin-left: 191px;
+    padding-bottom: 138px;
+}
+.why__we{
+    text-align: center;
+    display: inline-block;
+}
+.why__we h3{
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 54px;
+    margin-bottom: 27px;
+}
+.why__we p{
+    font-size: 14px;
+}
+
 
 /*Второй экран:Конец*/
 
@@ -195,3 +228,60 @@ body {
     border-top: 19px solid white;
 }
 /*Третий экран:Конец*/
+
+/*Четвертый экран:Начало*/
+.present__to__each{
+    background: url(../image/Rectangle5.png) no-repeat top center / cover;
+    min-height: 167vh;
+    margin: auto;
+}
+.present__to__each h2{
+    color: white;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 700;
+    padding-right: 166px;
+    padding-top: 120px;
+}
+.present__to__each p{
+    width: 674px;
+    color: white;
+    text-align: right;
+    font-size: 14px;
+    padding-left: 665px;
+    margin-top: -104px;
+}
+.present__to__each__image{
+    margin-left: 170px;
+    margin-right: 1018px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-sizing: content-box;
+    border-collapse: collapse; /*Устанавливает, как отображать границы вокруг ячеек таблицы: 1 линия*/
+    border-top-left-radius: 189px;
+    border-top-right-radius: 192px;
+    border-bottom-left-radius: 187px;
+    border-bottom-right-radius: 190px;
+}
+/*Четвертый экран:Конец*/
+
+/*Пятый экран:Начало*/
+.table__of__filmes{
+    padding-right: 302px;
+    padding-left: 268px;
+}
+.table__of__filmes h2{
+    padding-top: 113px;
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 52px;
+}
+.table__of__filmes p{
+    width: 670px;
+    padding-bottom: 82px;
+}
+.table-filmes{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+/*Пятый экран:Конец*/
