@@ -16,15 +16,13 @@ body {
     margin: auto;
     position: relative;
 }
-.first_page .slice{
-    background-color: yellowgreen;
+.first_page::after{
+    content: "";
     position: absolute;
     bottom: 0;
-    width: calc(100% + 200px);
-    height: 220px;
-    z-index: 0;
-    transform: translate(0, 220px) rotate(-8deg);
-    transform-origin: 0 0;
+    left: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 5.55rem solid #fff;
 }
 /*Логотип*/
 .image-logo{
@@ -106,6 +104,9 @@ body {
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+.second__page{
+    position: relative;
+}
 .welcome h2{
     font-size: 44px;
     font-weight: 700;
@@ -125,8 +126,13 @@ body {
     padding-bottom: 138px;
 }
 .why__we{
-    text-align: center;
     display: inline-block;
+}
+.why__we h2{
+    font-weight: 700;
+    font-size: 50px;
+    text-align: left;
+    margin-left: 170px;
 }
 .why__we h3{
     font-size: 35px;
@@ -137,6 +143,7 @@ body {
 .why__we p{
     font-size: 14px;
 }
+
 
 
 /*Второй экран:Конец*/
@@ -231,10 +238,11 @@ body {
 
 /*Четвертый экран:Начало*/
 .present__to__each{
-    background: url(../image/Rectangle5.png) no-repeat top center / cover;
-    min-height: 167vh;
+    background: url(../image/third_bg.png) no-repeat top center / cover;
+    min-height: 779px;
     margin: auto;
 }
+
 .present__to__each h2{
     color: white;
     text-align: right;
@@ -254,34 +262,17 @@ body {
 .present__to__each__image{
     margin-left: 170px;
     margin-right: 1018px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: -131px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
     box-sizing: content-box;
     border-collapse: collapse; /*Устанавливает, как отображать границы вокруг ячеек таблицы: 1 линия*/
-    border-top-left-radius: 189px;
-    border-top-right-radius: 192px;
-    border-bottom-left-radius: 187px;
-    border-bottom-right-radius: 190px;
+    border-top-left-radius: 202px;
+    border-top-right-radius: 207px;
+    border-bottom-left-radius: 195px;
+    border-bottom-right-radius: 199px
 }
 /*Четвертый экран:Конец*/
 
 /*Пятый экран:Начало*/
-.table__of__filmes{
-    padding-right: 302px;
-    padding-left: 268px;
-}
-.table__of__filmes h2{
-    padding-top: 113px;
-    font-size: 50px;
-    font-weight: 700;
-    padding-bottom: 52px;
-}
-.table__of__filmes p{
-    width: 670px;
-    padding-bottom: 82px;
-}
-.table-filmes{
-    border-collapse: collapse;
-    width: 100%;
-    
-}
+
 /*Пятый экран:Конец*/
