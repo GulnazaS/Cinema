@@ -112,6 +112,7 @@ body {
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 28px;
+    text-align: left;
 }
 .welcome p{
     font-size: 14px;
@@ -119,7 +120,6 @@ body {
     line-height: 1.5;
 }
 .why{
-    text-align: left;
     font-size: 54px;
     margin-top: -62px;
     margin-left: 191px;
@@ -133,6 +133,7 @@ body {
     font-size: 50px;
     text-align: left;
     margin-left: 170px;
+    padding-bottom: 143px;
 }
 .why__we h3{
     font-size: 35px;
@@ -144,7 +145,13 @@ body {
     font-size: 14px;
 }
 
-
+.promo-cod{
+    width: 300px;
+    text-align: center;
+    padding-left: 178px;
+    padding-right: 171px;
+    display: inline-block;
+}
 
 /*Второй экран:Конец*/
 
