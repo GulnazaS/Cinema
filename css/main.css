@@ -81,6 +81,7 @@ body {
 /*Первый экран:Конец*/
 
 /*Второй экран:Начало*/
+/*Добро пожаловать*/
 .welcome{
     text-align: left;
     width: 411px;
@@ -108,51 +109,41 @@ body {
     margin-top: 6px;
     line-height: 1.5;
 }
+/*Почему мы*/
 .why{
     font-size: 54px;
     margin-top: -62px;
     margin-left: 191px;
-    padding-bottom: 138px;
+    padding-bottom: 140px;
 }
-
 .why__we h2{
     font-weight: 700;
     font-size: 50px;
     text-align: left;
+    padding-bottom: 133px;
+}
+.why__we h2, .promocod{
     margin-left: 170px;
-    padding-bottom: 143px;
+    margin-right: 180px;
 }
-.why__we h3{
+.promocod{
+    text-align: center;
+}
+.advantage__block{
+    display: inline-block;
+    width: 32.33%;
+}
+.advantage__text h3{
     font-size: 35px;
-    font-weight: 900;
-    margin-top: 54px;
-    margin-bottom: 27px;
+    font-weight: 800;
+    margin-top: 56px;
+    margin-bottom: 25px;
 }
-.why__we p{
+.advantage__text p{
+    font-weight: 300;
     font-size: 14px;
 }
-.promo-cod{
-    text-align: center;
-    padding-left: 178px;
-    padding-right: 171px;
-    position: relative;
-}
-.advantages__picture{
-    transition: 1s;
-}
-.advantages__picture:hover{
-    transform: scale(1.2);
-}
-.big__screen, .surround__sound, .comfortable__chairs{
-    position: absolute;
-    width: 296px;
-}
-.surround__sound{
-    left: 41%;
-}
-.comfortable__chairs{
-    left: 68%;
-}
+
 /*Второй экран:Конец*/
 
 
@@ -162,9 +153,6 @@ body {
     max-width: 1030px;
     margin: auto;
 }
-.movie-list{
-    margin-top: 430px;
-}
 .movie-list__header{
     color:#252525; 
     font-size: 40px;
@@ -173,7 +161,6 @@ body {
     margin: 110px; /*Величина отступа*/
     margin-bottom: 63px; /* Величина отступа нижнего края*/
 }
-
 .movie-list__table{
     width: 100%;
     margin-left: auto;
@@ -185,7 +172,6 @@ body {
     vertical-align: super; /*Выравнивает элемент по вертикали*/
     width: 80%; /*Ширина блочных элементов*/
 }
-
 .movie-list__table thead{
     color: white;
     font-size: 22px;
@@ -203,7 +189,6 @@ body {
     text-align: left;
     text-indent: 36px;
 } 
-
 .movie-list__table td{
     padding-top: 22px;
     padding-bottom: 14px;
@@ -214,7 +199,6 @@ body {
 .movie-list__table tbody tr:nth-child(2n+1) {
     background: #6c6c6c;
 }
-
 .movie-list__table tbody tr:last-child td:first-child{
     border-bottom-left-radius: 15px;
     overflow: hidden;
@@ -223,7 +207,6 @@ body {
     border-bottom-right-radius: 15px;
     overflow: hidden;
 }
-
 .movie-list__table tfoot{
     background: white;
     color: black;
@@ -252,7 +235,6 @@ body {
     min-height: 779px;
     margin: auto;
 }
-
 .present__to__each h2{
     color: white;
     text-align: right;
@@ -362,7 +344,6 @@ body {
     background-color: #fff;
     margin: 20px 0;
 }
-
 .block__relative{
     position: relative;
     border-radius: 20px;
@@ -387,10 +368,11 @@ body {
 .facebook{
     float: right;
     left: 56px;
-    left: 24px;
 }
 /*Пятый экран:Конец*/
 /*Шестой экран:Начало*/
+/*Форма*/
+
 /*Шестой экран:Конец*/
 /*Footer*/
 .anhor{
@@ -415,16 +397,13 @@ body {
     padding-bottom: 44px;
 }
 .social__networks {
-    display: inline-block;
     padding-right: 540px;
     padding-left: 540px;
     text-align: center;
-    position: relative;
 }
 .footer__icon{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 210px;
     transition: 0.3s;
+    display: inline-block;
 }
-
-
