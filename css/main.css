@@ -44,7 +44,7 @@ body {
 .block__nav li+li{
     margin-left: 44px;
 }
-.block__nav a{
+.block__nav a, .city a{
     font-size: 15px;
     color: white;
     text-transform: uppercase;
@@ -52,11 +52,10 @@ body {
     font-weight: 300;
     transition: 0.2s;
 }
-.block__nav a:hover{
+.block__nav a:hover, .city a:hover{
     color:#90d23d;
-    border-bottom: 1px;
+    border-bottom: 1px solid #90d23d ;
 }
-
 /*Выбор города*/
 .city{
     color: white;
@@ -64,17 +63,6 @@ body {
     margin-right: 86px;
     margin-top: -16px;
 }
-.city a{
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 300;
-    transition: 0.2s;
-}
-.city a:hover{
-    color:#90d23d;
-}
-
 /*Заголовок и подзаголовок*/
 .Pay__tickets{
     text-align: center;
@@ -148,6 +136,12 @@ body {
     padding-left: 178px;
     padding-right: 171px;
     position: relative;
+}
+.advantages__picture{
+    transition: 1s;
+}
+.advantages__picture:hover{
+    transform: scale(1.2);
 }
 .big__screen, .surround__sound, .comfortable__chairs{
     position: absolute;
@@ -386,7 +380,6 @@ body {
     border-radius: 100%;
     position: absolute;
     bottom: 24px;
-    left: 24px;
 }
 .twitter{
     float: left;
@@ -394,9 +387,8 @@ body {
 .facebook{
     float: right;
     left: 56px;
+    left: 24px;
 }
-
-
 /*Пятый экран:Конец*/
 /*Шестой экран:Начало*/
 /*Шестой экран:Конец*/
@@ -429,4 +421,10 @@ body {
     text-align: center;
     position: relative;
 }
+.footer__icon{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 210px;
+    transition: 0.3s;
+}
+
 
