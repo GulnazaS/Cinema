@@ -143,6 +143,12 @@ body {
     font-weight: 300;
     font-size: 14px;
 }
+.advantage__picture{
+    transition: 0.3s;
+}
+.advantage__picture:hover{
+    transform: scale(1.07);
+}
 
 /*Второй экран:Конец*/
 
