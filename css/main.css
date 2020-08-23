@@ -1,20 +1,23 @@
 /*Объявление класса container для задания его стилей*/
 body {
     font-family: 'Roboto', sans-serif;
-    min-width: 320px;
-    max-width: 1920px;
+    min-width: 16rem;
+    max-width: 96rem;
     -webkit-text-size-adjust: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-
+html{
+    font-size: 20px;
+}
 /*Первый экран:начало*/
 /*Фон*/
 .first_page{
     background: url(../image/bg.jpg) no-repeat top center / cover;
-    min-height: 770px;
+    min-height: 38.5rem;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 .first_page::after{
     content: "";
@@ -27,9 +30,9 @@ body {
 /*Логотип*/
 .image-logo{
     display: inline-block;
-    padding-top: 45px;
-    margin-left: 192px;
-    margin-bottom: -16px;
+    padding-top: 2.25rem;
+    margin-left: 9.6rem;
+    margin-bottom: -0.8rem;
     box-sizing: border-box;
 }
 
@@ -37,15 +40,15 @@ body {
 .block__nav li{
     display: inline-block;
     text-align: right;
-    margin-left:681px;
-    margin-top: -36px;
+    margin-left:34.05rem;
+    margin-top: -1.8rem;
     box-sizing: border-box;
 }
 .block__nav li+li{
-    margin-left: 44px;
+    margin-left: 2.2rem;
 }
 .block__nav a, .city a{
-    font-size: 15px;
+    font-size: 0.75rem;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -54,28 +57,28 @@ body {
 }
 .block__nav a:hover, .city a:hover{
     color:#90d23d;
-    border-bottom: 1px solid #90d23d ;
+    border-bottom: 0.05rem solid #90d23d ;
 }
 /*Выбор города*/
 .city{
     color: white;
     text-align: right;
-    margin-right: 86px;
-    margin-top: -16px;
+    margin-right: 4.3rem;
+    margin-top: -0.8rem;
 }
 /*Заголовок и подзаголовок*/
 .Pay__tickets{
     text-align: center;
     color: white;
     font: 'Roboto-Thin' sans-serif;
-    margin-top: 200px;
+    margin-top: 10rem;
 }
 .Pay__tickets h1{
-    font-size: 80px;
+    font-size: 4rem;
     font-weight: 100;
 }
 .Pay__tickets h2{
-    font-size: 50px;
+    font-size: 2.5rem;
 }
 
 /*Первый экран:Конец*/
@@ -84,64 +87,69 @@ body {
 /*Добро пожаловать*/
 .welcome{
     text-align: left;
-    width: 411px;
-    height: 239px;
-    padding-top: 40px;
-    padding: 34px;
-    padding-right: 115px;
-    margin-left: 753px;
-    margin-top: -187px;
+    width: 20.55rem;
+    height: 12rem;
+    padding-top: 2rem;
+    padding: 1.7rem;
+    padding-right: 3.75rem;
+    margin-left: 38.77rem;
+    margin-top: -8.4rem;
     background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
 }
 .second__page{
     position: relative;
 }
 .welcome h2{
-    font-size: 44px;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 1.5;
-    margin-bottom: 28px;
+    margin-bottom: 1.4rem;
     text-align: left;
 }
 .welcome p{
-    font-size: 14px;
-    margin-top: 6px;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
     line-height: 1.5;
 }
 /*Почему мы*/
 .why{
-    font-size: 54px;
-    margin-top: -62px;
-    margin-left: 191px;
-    padding-bottom: 140px;
+    font-size: 2.7px;
+    margin-top: -3.1rem;
+    margin-left: 9.6rem;
 }
 .why__we h2{
     font-weight: 700;
-    font-size: 50px;
+    font-size: 2.5rem;
     text-align: left;
-    padding-bottom: 133px;
+    padding-bottom: 6.7rem;
 }
 .why__we h2, .promocod{
-    margin-left: 170px;
-    margin-right: 180px;
+    margin-left: 8.5rem;
+    margin-right: 9rem;
 }
 .promocod{
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 .advantage__block{
     display: inline-block;
     width: 32.33%;
+    height: 22.5rem;
+}
+.advantage__block__picture__wrapper{
+    height: 10.6rem;
 }
 .advantage__text h3{
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 800;
-    margin-top: 56px;
-    margin-bottom: 25px;
+    margin-top: 2.8rem;
+    margin-bottom: 1.25rem;
 }
 .advantage__text p{
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.7rem;
 }
 .advantage__picture{
     transition: 0.3s;
@@ -156,48 +164,48 @@ body {
 /*Третий экран:Начало*/
 /*Таблица*/
 .container{
-    max-width: 1030px;
+    max-width: 51.5rem;
     margin: auto;
 }
 .movie-list__header{
     color:#252525; 
-    font-size: 40px;
+    font-size: 2rem;
     text-align: center;
     font-weight: 700;
-    margin: 110px; /*Величина отступа*/
-    margin-bottom: 63px; /* Величина отступа нижнего края*/
+    margin-bottom: 3.15rem; /* Величина отступа нижнего края*/
+    padding-top: 1rem;
 }
 .movie-list__table{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse; /*Устанавливает, как отображать границы вокруг ячеек таблицы: 1 линия*/
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
     overflow: hidden; /*управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров*/
     vertical-align: super; /*Выравнивает элемент по вертикали*/
     width: 80%; /*Ширина блочных элементов*/
 }
 .movie-list__table thead{
     color: white;
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 700;
-    line-height: 11px; /*межстрочный интервал*/
+    line-height: 0.6rem; /*межстрочный интервал*/
     vertical-align: super;
     text-align: center;
     background: #a3cc40;
 }
 .movie-list__table tbody {
-    font-size: 22px;
+    font-size: 1.1rem;
     color: white;
     vertical-align: super;
     background: #373737;
     text-align: left;
-    text-indent: 36px;
+    text-indent: 1.8rem;
 } 
 .movie-list__table td{
-    padding-top: 22px;
-    padding-bottom: 14px;
+    padding-top: 1.1rem;
+    padding-bottom: 0.7rem;
 }
 .movie-list__table a {
     color: white;
@@ -206,113 +214,114 @@ body {
     background: #6c6c6c;
 }
 .movie-list__table tbody tr:last-child td:first-child{
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 0.75rem;
     overflow: hidden;
 }
 .movie-list__table tbody tr:last-child td:last-child{
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 0.75rem;
     overflow: hidden;
 }
 .movie-list__table tfoot{
     background: white;
     color: black;
-    font-size: 14px;
+    font-size: 0.7rem;
 }
 
 /* Стрелки на заголовке таблицы*/
 .sort__arrow {
     display: inline-block;
-    border-right: 11px solid transparent;
-    border-left: 11px solid transparent;
+    border-right: 0.55rem solid transparent;
+    border-left: 0.55rem solid transparent;
     width: 0; 
     height: 0; 
 }
 .sort__arrow-up{
-    border-bottom: 19px solid white;  
+    border-bottom: 1rem solid white;  
 }
 .sort__arrow-down {
-    border-top: 19px solid white;
+    border-top: 1rem solid white;
 }
 /*Третий экран:Конец*/
 
 /*Четвертый экран:Начало*/
 .present__to__each{
     background: url(../image/third_bg.png) no-repeat top center / cover;
-    min-height: 779px;
+    min-height: 39rem;
     margin: auto;
 }
 .present__to__each h2{
     color: white;
     text-align: right;
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
-    padding-right: 166px;
-    padding-top: 120px;
+    padding-right: 8.3rem;
+    padding-top: 6rem;
 }
 .present__to__each p{
-    width: 674px;
+    width: 33.7rem;
     color: white;
     text-align: right;
-    font-size: 14px;
-    padding-left: 665px;
-    margin-top: 63px;
-    line-height: 16px;
-    margin-bottom: -209px;
+    font-size: 0.7rem;
+    padding-left: 33.3rem;
+    margin-top: 3.2rem;
+    line-height: 0.8rem;
+    margin-bottom: -10.5rem;
 }
 .present__to__each__image{
-    margin-left: 170px;
-    margin-right: 1018px;
-    margin-top: -131px;
-    box-shadow: 0 0 10px rgba(0,0,0,1);
+    margin-left: 8.5rem;
+    margin-right: 51rem;
+    margin-top: -6.6rem;
     box-sizing: content-box;
     border-collapse: collapse; /*Устанавливает, как отображать границы вокруг ячеек таблицы: 1 линия*/
-    border-top-left-radius: 202px;
-    border-top-right-radius: 207px;
-    border-bottom-left-radius: 195px;
-    border-bottom-right-radius: 199px;
+    position: relative;
+}
+.present__to__each__image__img{
+    position: absolute;
+    box-shadow: 0 0 0.5rem;
+    border-radius: 50%;
 }
 .button__present{
     text-align: center;
     background-color: #90d23d;
     color: #fff;
-    font-size: 18px;
-    width: 220px;
-    height: 54px;
+    font-size: 0.9rem;
+    width: 11rem;
+    height: 2.7rem;
     border-collapse: collapse;
-    border-radius: 16px;
+    border-radius: 0.8rem;
     float: right;
-    margin-right: 175px;
-    margin-top: 468px;
+    margin-right: 8.8rem;
+    margin-top: 23.4rem;
 }
   
 /*Четвертый экран:Конец*/
 
 /*Пятый экран:Начало*/
 .table__of__filmes{
-    padding-left: 200px;
-    padding-top: 128px;
-    padding-bottom: 100px;
+    padding-left: 10rem;
+    padding-top: 6.4rem;
+    padding-bottom: 10rem;
 }
 .table__of__filmes h2, .subtitle{
-    padding-left: 25px;
+    padding-left: 1.25rem;
 }
 .table__of__filmes h2{
     color: black;
     font-weight: 900;
-    font-size: 50px;
-    padding-bottom: 50px;
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 .subtitle{
-    font-size: 18px;
-    padding-bottom: 80px;
-    padding-right: 512px;
+    font-size: 0.9rem;
+    padding-bottom: 4rem;
+    padding-right: 25.6rem;
 }
 .table__filmes{
-    width: 292px;
+    width: 14.6rem;
     border-collapse: collapse;
 }
 .string{
-    padding: 23px;
+    padding: 1.2rem;
     position: relative;
 }
 .string__picture{
@@ -325,34 +334,34 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    padding: 24px 24px 60px;
+    padding: 1.2rem 1.2rem 3rem;
     color: #ffffff;
     transform: translateY(100%);
     transition: 0.3s;
 }
 .string__text h3{
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 50px;
+    margin-bottom: 2.5rem;
 }
 .string__text a{
     text-decoration:none ;
     color: #ffffff;
 }
 .string__text p{
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 .white__strip{
-    width: 84px;
-    height: 6px;
+    width: 4.2rem;
+    height: 0.3rem;
     background-color: #fff;
-    margin: 20px 0;
+    margin: 1rem 0;
 }
 .block__relative{
     position: relative;
-    border-radius: 20px;
+    border-radius: 1rem;
     overflow: hidden;
 }
 .block__relative:hover .string__text{
@@ -362,18 +371,18 @@ body {
     display: inline-block;
 }
 .facebook, .twitter{
-    width: 33px;
-    height: 33px;
+    width: 1.65rem;
+    height: 1.65rem;
     border-radius: 100%;
     position: absolute;
-    bottom: 24px;
+    bottom: 1.2rem;
 }
 .twitter{
     float: left;
 }
 .facebook{
     float: right;
-    left: 56px;
+    left: 2.8rem;
 }
 /*Пятый экран:Конец*/
 /*Шестой экран:Начало*/
@@ -390,33 +399,36 @@ body {
 .footer__icon{
     display: inline-block;
     width: 4%;
-    padding-top: 60px;
+    padding-top: 3rem;
 }
-.footer__icon img{
+.footer__icon__image img{
     transition: 0.2s;
-    box-shadow: 0 0 14px rgba(0,0,16,0.7);
+    box-shadow: 0 0 0.7rem rgba(0,0,0,1);
     border-radius: 50%;
-}
-.footer__icon img:hover{
+} 
+.footer__icon__image img:hover{
     box-shadow: none;
 }
 .footer__text{
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 300;
     color: #ffffff;
     text-align: center;
-    padding-left: 494px;
-    padding-right: 498px;
-    padding-top: 40px;
-    padding-bottom: 46px;
+    padding-left: 24.7rem;
+    padding-right: 24.9rem;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
 }
 /*Якорь*/
 .anhor {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
 }
 .anhor a{
-    font-size: 20px;
+    font-size: 1rem;
     color: #fff;
     text-decoration: none;
+}
+.anhor a:hover{
+    border-bottom: 0.05rem solid white;
 }

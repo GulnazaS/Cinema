@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <!--Резиновые элементы внутри сайта-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кинотеатр</title>
     <!--Подключение файла .css для подключения стилей-->
     <link rel="stylesheet" href="css/reset.css">
@@ -10,6 +11,8 @@
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="js/plugins/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/plugins/owlcarousel/css/owl.theme.default.css">
 
     <!--Открытие ссылки в новой вкладке-->
     <base target="_blank">
@@ -66,21 +69,42 @@
         <div><h2>Почему мы?</h2></div> 
         <div class="promocod">
             <div class="advantage__block">
-                <div> <img src="image/icon_1.png" alt="Пленка" class="advantage__picture"></div>
+                <div class="advantage__block__picture__wrapper"> <img src="image/icon_1.png" alt="Пленка" class="advantage__picture"></div>
                 <div class="advantage__text">
                     <h3 class="big__screen">Большие экраны </h3> 
                     <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i> </p>
                 </div>
             </div>
             <div class="advantage__block">
-                <div><img src="image/icon_2.png" alt="Рупор" class="advantage__picture"></div>
+                <div class="advantage__block__picture__wrapper"><img src="image/icon_2.png" alt="Рупор" class="advantage__picture"></div>
                 <div class="advantage__text">
                     <h3>Объемный звук</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
             <div class="advantage__block">
-                <div> <img src="image/icon_3.png" alt="Сидение" class="advantage__picture"></div>
+                <div class="advantage__block__picture__wrapper"> <img src="image/icon_3.png" alt="Сидение" class="advantage__picture"></div>
+                <div class="advantage__text">
+                    <h3>Удобные кресла</h3> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
+                </div>
+            </div>
+            <div class="advantage__block">
+                <div class="advantage__block__picture__wrapper"> <img src="image/icon_1.png" alt="Пленка" class="advantage__picture"></div>
+                <div class="advantage__text">
+                    <h3 class="big__screen">Большие экраны </h3> 
+                    <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i> </p>
+                </div>
+            </div>
+            <div class="advantage__block">
+                <div class="advantage__block__picture__wrapper"><img src="image/icon_2.png" alt="Рупор" class="advantage__picture"></div>
+                <div class="advantage__text">
+                    <h3>Объемный звук</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="advantage__block">
+                <div class="advantage__block__picture__wrapper"> <img src="image/icon_3.png" alt="Сидение" class="advantage__picture"></div>
                 <div class="advantage__text">
                     <h3>Удобные кресла</h3> 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
@@ -153,7 +177,7 @@
         <div class="present__to__each">
             <h2>Подарок каждому!</h2> 
             <div class="present__to__each__image">
-                <img src="image/Слой4.png" alt="Подарок/">
+                <img src="image/Слой4.png" alt="Подарок" class="present__to__each__image__shadow">
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</p> 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</p>  
@@ -492,27 +516,27 @@
 <footer class="footer">
     <div class="social__networks">
         <a title="Twitter" href="https://twitter.com/" class="footer__icon">
-            <div>
+            <div class="footer__icon__image">
                 <img src="image/twitter_footer.png" alt="Twitter_icon">
             </div>
         </a>
         <a title="Facebook" href="https://ru-ru.facebook.com/" class="footer__icon">
-            <div>
+            <div class="footer__icon__image">
                 <img src="image/facebook_footer.png" alt="Facebook_icon">
             </div>
         </a>
         <a title="Tumblr" href="https://www.tumblr.com/" class="footer__icon">
-            <div>
+            <div class="footer__icon__image">
                 <img src="image/tumblr.png" alt="tumblr_icon">
             </div>
         </a>
         <a title="Google+" href="https://google.com/" class="footer__icon">
-            <div>
+            <div class="footer__icon__image">
                 <img src="image/google_plus.png" alt="google_icon">
             </div>
         </a>
         <a title="Linkedin" href="https://linkedin.com/" class="footer__icon">
-            <div>
+            <div class="footer__icon__image">
                 <img src="image/linkedin.png" alt="google_icon">
             </div>
         </a>
@@ -525,4 +549,6 @@
         <a href="#меню" target="_self">Наверх</a>
     </div>
 </footer> 
+<script src="js/plugins/jquery.js"></script>
+<script src="js/plugins/owlcarousel/javascript/owl.carousel.min.js"></script>
 </html>
