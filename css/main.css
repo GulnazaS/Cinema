@@ -1,4 +1,5 @@
 /*Объявление класса container для задания его стилей*/
+@import url('media.css') screen and (max-width:1200px);
 body {
     font-family: 'Roboto', sans-serif;
     min-width: 16rem;
@@ -8,8 +9,9 @@ body {
     margin-right: auto;
 }
 html{
-    font-size: 20px;
+    font-size: 1.46vw;
 }
+
 /*Первый экран:начало*/
 /*Фон*/
 .first_page{
@@ -24,25 +26,23 @@ html{
     position: absolute;
     bottom: 0;
     left: 0;
-    border-left: 100vw solid transparent;
-    border-bottom: 5.55rem solid #fff;
+    border-left: 200vw solid transparent;
+    border-bottom: 10.55rem solid #fff;
 }
 /*Логотип*/
 .image-logo{
     display: inline-block;
     padding-top: 2.25rem;
-    margin-left: 9.6rem;
+    margin-left: 3.6rem;
     margin-bottom: -0.8rem;
     box-sizing: border-box;
 }
-
 /*Меню*/
 .block__nav li{
     display: inline-block;
-    text-align: right;
-    margin-left:34.05rem;
-    margin-top: -1.8rem;
+    margin-left: 17rem;
     box-sizing: border-box;
+    text-align: center;
 }
 .block__nav li+li{
     margin-left: 2.2rem;
@@ -59,12 +59,12 @@ html{
     color:#90d23d;
     border-bottom: 0.05rem solid #90d23d ;
 }
-/*Выбор города*/
+
 .city{
     color: white;
     text-align: right;
-    margin-right: 4.3rem;
-    margin-top: -0.8rem;
+    margin-top: -1rem;
+    margin-right: 5rem;
 }
 /*Заголовок и подзаголовок*/
 .Pay__tickets{
@@ -89,13 +89,13 @@ html{
     text-align: left;
     width: 20.55rem;
     height: 12rem;
-    padding-top: 2rem;
-    padding: 1.7rem;
-    padding-right: 3.75rem;
-    margin-left: 38.77rem;
-    margin-top: -8.4rem;
+    padding: 1.7rem 3.75rem 1.7rem 1.7rem;
+    margin-top: -9.4rem;
     background: white;
     box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+    margin-bottom: 3rem;
+    float: right;
+    margin-right: 5rem;
 }
 .second__page{
     position: relative;
@@ -123,6 +123,7 @@ html{
     font-size: 2.5rem;
     text-align: left;
     padding-bottom: 6.7rem;
+    padding-top: 7rem;
 }
 .why__we h2, .promocod{
     margin-left: 8.5rem;
@@ -153,6 +154,7 @@ html{
 }
 .advantage__picture{
     transition: 0.3s;
+    width: 12rem;
 }
 .advantage__picture:hover{
     transform: scale(1.07);
@@ -164,7 +166,7 @@ html{
 /*Третий экран:Начало*/
 /*Таблица*/
 .container{
-    max-width: 51.5rem;
+    max-width: 67.5rem;
     margin: auto;
 }
 .movie-list__header{
@@ -298,9 +300,7 @@ html{
 
 /*Пятый экран:Начало*/
 .table__of__filmes{
-    padding-left: 10rem;
-    padding-top: 6.4rem;
-    padding-bottom: 10rem;
+    padding: 3rem 5.4rem 3rem 5rem;
 }
 .table__of__filmes h2, .subtitle{
     padding-left: 1.25rem;
@@ -311,10 +311,10 @@ html{
     font-size: 2.5rem;
     padding-bottom: 2.5rem;
 }
-.subtitle{
-    font-size: 0.9rem;
+.subtitle{    
+    font-size: 1.3rem;
     padding-bottom: 4rem;
-    padding-right: 25.6rem;
+    width: 62%;
 }
 .table__filmes{
     width: 14.6rem;
@@ -387,7 +387,9 @@ html{
 /*Пятый экран:Конец*/
 /*Шестой экран:Начало*/
 /*Форма*/
-
+.last__page img{
+    width: 54rem;
+}
 /*Шестой экран:Конец*/
 /*Footer*/
 .footer{
@@ -398,7 +400,7 @@ html{
 }
 .footer__icon{
     display: inline-block;
-    width: 4%;
+    width: 6%;
     padding-top: 3rem;
 }
 .footer__icon__image img{

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="js/plugins/owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="js/plugins/owlcarousel/css/owl.theme.default.css">
 
@@ -29,28 +29,27 @@
                         </div>  
                     </a>
                 </div>
-                    <!--Шапка-->
-                        <!--Меню-->
-                        <div class="menu" id="меню">
-                            <span>
-                                <nav class="block__nav text-right">
-                                    <ul>
-                                        <li><a title="ЗАКАЗАТЬ БИЛЕТ" href="paytikets.html">ЗАКАЗАТЬ БИЛЕТ</a></li>
-                                        <li><a title="ПРЕИМУЩЕСТВА" href="advantages.html">ПРЕИМУЩЕСТВА</a></li> 
-                                        <li><a title="ФИЛЬМЫ" href="films.html">ФИЛЬМЫ</a></li>
-                                        <li><a title="КОНТАКТЫ" href="contacts.html">КОНТАКТЫ</a></li> 
-                                    </ul>
-                                </nav>
-                            </span>
-                        </div> 
-                    <!--Выбор города-->
-                    <div class="city"><aside>Ваш город: <strong><a href="">Москва</a></strong></aside></div>
+                <div class="menu" id="menu">
+                    <span>
+                        <div class="menu__wrapper">
+                            <div class="menu__burger"><span></span></div>
+                            <nav class="block__nav text-right">
+                                <ul>
+                                    <li><a title="ЗАКАЗАТЬ БИЛЕТ" href="paytikets.html">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                                    <li><a title="ПРЕИМУЩЕСТВА" href="advantages.html">ПРЕИМУЩЕСТВА</a></li> 
+                                    <li><a title="ФИЛЬМЫ" href="films.html">ФИЛЬМЫ</a></li>
+                                    <li><a title="КОНТАКТЫ" href="contacts.html">КОНТАКТЫ</a></li> 
+                                </ul>
+                            </nav>
+                        </div>
+                    </span>
+                </div> 
+                <div class="city"><aside>Ваш город: <strong><a href="">Москва</a></strong></aside></div>
             </header>
-            <!--Второй блок-->
-            <div class="Pay__tickets">
-                    <!--Заголовок--> <h1>Закажите билет в кино</h1>
-                    <!--Параграф-->  <h2> Всем покупателям подарок!</h2>
-            </div>
+        </div>
+        <div class="Pay__tickets">
+            <h1>Закажите билет в кино</h1>
+            <h2> Всем покупателям подарок!</h2>
         </div>
     </div> 
     <!--Первый экран:конец-->
@@ -89,33 +88,12 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
                 </div>
             </div>
-            <div class="advantage__block">
-                <div class="advantage__block__picture__wrapper"> <img src="image/icon_1.png" alt="Пленка" class="advantage__picture"></div>
-                <div class="advantage__text">
-                    <h3 class="big__screen">Большие экраны </h3> 
-                    <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i> </p>
-                </div>
-            </div>
-            <div class="advantage__block">
-                <div class="advantage__block__picture__wrapper"><img src="image/icon_2.png" alt="Рупор" class="advantage__picture"></div>
-                <div class="advantage__text">
-                    <h3>Объемный звук</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="advantage__block">
-                <div class="advantage__block__picture__wrapper"> <img src="image/icon_3.png" alt="Сидение" class="advantage__picture"></div>
-                <div class="advantage__text">
-                    <h3>Удобные кресла</h3> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
-                </div>
-            </div>
         </div>
     </section>
 
     <!--Третий экран:начало-->
     <!--Расписание фильмов: таблица-->
-    <section>
+     <section>
         <div class="container">
             <div class="movie-list">
                 <caption>
@@ -139,24 +117,24 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>10:00</td>
-                        <td>Человек-паук</td>
-                        <td>кнопка</td> 
+                        <td id="film__start__1"></td>
+                        <td id="film__name__1"></td>
+                        <td id="film__genre__1"></td> 
                     </tr>
                     <tr>
                         <td>12:00</td>
                         <td>Собачья жизнь 2</td>
-                        <td>кнопка</td>
+                        <td>фэнтези, драма, комедия</td>
                     </tr>
                     <tr>
                         <td>14:00</td>
                         <td>История игрушек 4</td>
-                        <td>кнопка</td>
+                        <td>мультфильм, фэнтези, комедия</td>
                     </tr>
                     <tr>
                         <td>16:00</td>
                         <td>Люди в черном: Интернэшнл</td>
-                        <td>кнопка</td>
+                        <td>фантастика, боевик, комедия</td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -169,11 +147,11 @@
                  </table>
             </div>
         </div>
-    </section>         
+    </section>
    <!--Третий экран:конец-->
 
    <!--Четвертый экран:начало-->
-    <section>
+   <!-- <section>
         <div class="present__to__each">
             <h2>Подарок каждому!</h2> 
             <div class="present__to__each__image">
@@ -184,7 +162,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam</p> 
             <button class="button__present">Получить подарок</button>
         </div>
-    </section> 
+    </section> -->
   <!--Четвертый экран:конец-->
     
     <!--Пятый экран: начало-->
@@ -194,272 +172,326 @@
         <p class="subtitle">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
         </p>
-        <table class="table__filmes">
-            <tr>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 5 копия.png" alt="ЧП2/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук </a></h3>
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a  title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+            <div class="owl-carousel">
+                <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 5 копия.png" alt="ЧП2/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук </a></h3>
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a  title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 6.png" alt="СБ2/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="Cобачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></h3> 
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+                </div>
+                <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 6.png" alt="СБ2/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="Cобачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></h3> 
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 7.png" alt="ИГ4/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></h3>
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+                </div>    
+                 <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 7.png" alt="ИГ4/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></h3>
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 5 копия.png" alt="ЧП2/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук </a></h3>
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a  title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+                </div>
+                <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 5 копия.png" alt="ЧП2/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук </a></h3>
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a  title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 6.png" alt="СБ2/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="Cобачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></h3> 
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+                </div>
+                <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 6.png" alt="СБ2/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="Cобачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></h3> 
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 7.png" alt="ИГ4/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></h3>
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+                </div>
+                 <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 7.png" alt="ИГ4/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></h3>
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 5 копия.png" alt="ЧП2/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук </a></h3>
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a  title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+                </div>
+                <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 5 копия.png" alt="ЧП2/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук </a></h3>
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a  title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 6.png" alt="СБ2/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="Cобачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></h3> 
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+                </div>
+                <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 6.png" alt="СБ2/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="Cобачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></h3> 
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-                <td class="string">
-                    <div class="block__relative">
-                        <div class="string__picture">
-                            <img src="image/Слой 7.png" alt="ИГ4/">
-                        </div>
-                        <div class="string__text">
-                            <h3><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></h3>
-                            <div class="white__strip"></div>
-                            <p>More about selling in the Envato Marketplaces</p>
-                            <div class="social">
-                                <div class="facebook">
-                                    <a title="Facebook" href="https://ru-ru.facebook.com/">
-                                        <div class="Facebook__picture">
-                                            <img src="image/facebook.png" alt="Facebook">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="twitter">
-                                    <a title="Twitter" href="https://twitter.com/">
-                                        <div class="Twitter__picture">
-                                            <img src="image/twitter.png" alt="Twitter">
-                                        </div>
-                                    </a>
-                                </div>
+                </div>    
+                 <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 7.png" alt="ИГ4/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></h3>
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </td>
-            </tr>
-        </table>
+                </div>
+                <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 5 копия.png" alt="ЧП2/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="Человек-паук" href="https://www.kinopoisk.ru/film/1008445/"> Человек-паук </a></h3>
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a  title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 6.png" alt="СБ2/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="Cобачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/"> Собачья жизнь 2</a></h3> 
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="block__relative">
+                    <div class="string__picture">
+                        <img src="image/Слой 7.png" alt="ИГ4/">
+                    </div>
+                    <div class="string__text">
+                        <h3><a title="История игрушек 4" href="https://www.kinopoisk.ru/film/846824/">История игрушек 4</a></h3>
+                        <div class="white__strip"></div>
+                        <p>More about selling in the Envato Marketplaces</p>
+                        <div class="social">
+                            <div class="facebook">
+                                <a title="Facebook" href="https://ru-ru.facebook.com/">
+                                    <div class="Facebook__picture">
+                                        <img src="image/facebook.png" alt="Facebook">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a title="Twitter" href="https://twitter.com/">
+                                    <div class="Twitter__picture">
+                                        <img src="image/twitter.png" alt="Twitter">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
+     
     <!--Пятый экран: конец-->
 
     <!--Шестой экран: Начало-->
     <div class="last__page">
-        <!--Форма-->
         <form method="POST" action="order.php">
             <div>
                 <label for=""><b> Имя </b><input required type="text"></label>
@@ -486,7 +518,6 @@
                     </select>
                 </label>  
             </div>
-            
             <div>
                 <label for=""> 
                     <textarea placeholder="Напиши комментарий" cols="30" rows="10" name="description" class="textarea__style"></textarea>
@@ -507,13 +538,10 @@
                 </label>
             </div>
         </form> 
-        <!--Шестой экран: Конец-->
         <img src="image\map.png" alt="Карта">
     </div>
 </body>
-
-<!--Подвал сайта-->
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="social__networks">
         <a title="Twitter" href="https://twitter.com/" class="footer__icon">
             <div class="footer__icon__image">
@@ -541,14 +569,14 @@
             </div>
         </a>
     </div>
-    <!--Якорь-->
     <p class="footer__text" >
         Hope we see you at the event! © All Rights Reserved. Envato Bangladesh © 2015
     </p>
     <div class="anhor">
-        <a href="#меню" target="_self">Наверх</a>
+        <a href="#menu__burger" target="_self">Наверх</a>
     </div>
-</footer> 
+</footer> -->
 <script src="js/plugins/jquery.js"></script>
 <script src="js/plugins/owlcarousel/javascript/owl.carousel.min.js"></script>
+<script src="js/plugins/custom.js"></script>
 </html>

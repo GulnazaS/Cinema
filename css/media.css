@@ -1,0 +1,80 @@
+@media screen and (max-width:650px){
+    .image-logo{
+    padding-top: 1.25rem;
+    margin-left: 1.6rem;
+    zoom: 163%;
+    }
+    .Pay__tickets{
+        zoom: 150%;
+    }
+    .welcome{ 
+        text-align: left;
+        padding-top: 2rem;
+        padding: 1.7rem;
+        padding-right: 3.75rem;
+        background: white;
+        box-shadow: 0 0 0.5rem rgba(0,0,0,0.9);
+        margin: 1.5rem;
+        float: none;
+        margin-left: 4rem;
+        zoom: 161%;
+    }
+    .movie-list__table thead{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    .movie-list__table tbody{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .advantage__text p{
+        zoom: 127%;
+    }
+    .why__we h2{
+        padding-bottom: 2.7rem;
+        padding-top: 4rem;
+    }
+}
+@media screen and (max-width: 700px){
+    .advantage__block{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        .why__we h2 {
+            text-align: center;
+        }
+        .why__we h2, .advantage__block, .movie-list{
+            zoom: 200%;
+        }
+    }
+@media screen and (max-width: 850px){
+    html{
+        font-size: 2.86vw;
+    }
+    .logo img{
+        width: 9rem;
+    }
+    .why__we h2, .promocod {
+        margin-left: 1.5rem;
+        margin-right: 1rem;
+    }
+}
+@media screen and (max-width: 851px){
+    .why__we h2, .promocod {
+    margin-left: 3.5rem;
+    margin-right: 3rem;
+    }   
+    .footer__icon{
+        width: 7%;
+    }
+}
+@media screen and (max-width: 1200px){   
+    .Pay__tickets h1{
+        font-size: 3rem;
+    }
+    html{
+        font-size: 1.86vw;
+    }
+}
